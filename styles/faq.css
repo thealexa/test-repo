@@ -1,0 +1,49 @@
+/* definition list */
+
+dt, dd {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 2px 0;
+}
+
+dt {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+dt:hover {
+    color: #ac92ec;
+}
+
+dd {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* arrow icon left */
+
+dt:before {
+     border: 0.5em solid;
+     border-color: transparent transparent transparent #f2eeef;
+     content: '';
+     display: inline-block;
+     height: 0;
+     margin-right: 0.5em;
+     vertical-align: middle;
+     width: 0;
+}
+
+dt:hover:before {
+     border-left-color: #ac92ec;
+
+}
+
+/* arrow icon down */
+
+dt.open:before {
+  border-color: #f2eeef transparent transparent transparent;
+  border-bottom-width: 0;
+}
+    
+dt.open:hover:before {
+  border-left-color: transparent;
+  border-top-color: #ac92ec;
+}

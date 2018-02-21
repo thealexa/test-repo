@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!-- 
+Assignment Name: ACE IN THE HOlE
+File Name: contact.html
+Date: 1.29.18
+Programmer: Alexandra Nitsche
+-->
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>ACE IN THE HOLE EVENTS</title>
+    
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="styles/generic.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="logo">
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>  
+    <h1><br>ACE IN THE HOLE</h1>
+    </header>
+</div>
+ <nav>  
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html"> FAQ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    </nav> 
+<body>
+
+<?php
+// define variables and set to empty values
+$name = $email = $comment = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $comment = test_input($_POST["comment"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+    
+<h1>Contact Us </h1>
+<form action="smtptest.php" method="post">
+  Name: <input type="text" name="name">
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+    </form>
+
+</body>
+        <footer>
+        <h2>Follow Us On Social to See All the Fun we Have</h2>
+        <img src="images/instagrampaw.jpg" alt="instagram" height="75" width="75">
+        <img src="images/facebookpaw.jpg" alt="facebook" height="75" width="75">
+
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/nav.js"></script>
+</html>
