@@ -4,15 +4,21 @@ Assignment Name: ACE IN THE HOlE
 File Name: index.html
 Date: 1.29.18
 Programmer: Alexandra Nitsche
+
+	<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+	<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+	<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]
 -->
 
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-
     <title>ACE IN THE HOLE EVENTS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="keywords" content="carousel, jquery, responsive, fluid, elastic, resize, thumbnail, slider" />
     
     <link href="styles/reset.css" rel="stylesheet" type="text/css">
     <link href="styles/generic.css" rel="stylesheet" type="text/css">
@@ -56,41 +62,13 @@ Programmer: Alexandra Nitsche
             <h1>UPCOMING EVENT: Multisport Weekend March 24 and 25, 2018<br><br><a href="regsiter.html"><img src="images/register.png" id="info" title="register">
             </a> </h1>
         </section>
-     <h1>WELCOM TO THE PHOTO GALLERY</h1>
+     
 
- <div class="gallery-photos">
 
-  <div class="photo-thumbnails">
-  
-    <div class="thumbnail" id="imgNames">
-    
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        <div class="thumbnail-inner"><img src=""></div>
-        
-    </div> <!-- thumbnail -->
-    
-  </div> <!-- photo-thumbnails -->
-  
-    <div class="big-photo">
-    <img id="big-photo" src="" alt=""/>
-    <br/>
-      <div id="caption"></div>
-  </div> <!-- big-photo -->
-  
- </div> <!-- gallery-photos -->
-   
-        
-    
     </main>
 
     <footer>
-        <h2>Follow Us On Social to See Why Everyone Loves Pull-Over Pet</h2>
+        <h2>Follow Us On Social</h2>
         <img src="images/instagrampaw.jpg" alt="instagram" height="75" width="75">
         <img src="images/facebookpaw.jpg" alt="facebook" height="75" width="75">
 
@@ -98,6 +76,13 @@ Programmer: Alexandra Nitsche
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="scripts/nav.js"></script>
-<script src="scripts/gallery.js"></script>
+<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript">
+    
+    $( '#carousel' ).elastislide({
+				minItems : 2
+    });
+    </script>
 </body>
 </html>

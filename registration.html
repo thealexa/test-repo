@@ -6,14 +6,71 @@ Date: 1.29.18
 Programmer: Alexandra Nitsche
 -->
 
-<html>  
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>ACE IN THE HOLE EVENTS</title>
+    
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="styles/generic.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
 <body>
+<div class="logo">
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>  
+    <h1><br>ACE IN THE HOLE</h1>
+    </header>
+</div>
+ <nav>  
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html"> FAQ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    </nav> 
+    <main>
+        <img src="images/hero.jpg" id="hero" title="triathlon">
 
 <form action="thankyou.php" method="post">
-Name: <input type="text" name="name" id="name" required><br>
-E-mail: <input type="text" name="email" id="email" required><br>
+Name: <input type="text" name="name" id="name" required><br><br>
+E-mail: <input type="text" name="email" id="email" required><br><br>
+Phone Number: <input type="text" name="phone" id="phone" required><br><br>
+Emergency Contact Name: <input type="text" name="emername" id="emername" required><br><br>
+Emergency Contact Number: <input type="text" name="emerphone" id="emerphone" required><br><br>
+Choose one: <select name="status">
+    <option value="Athlete">Athlete</option>
+    <option value="Volunteer">Volunteer</option>
+    </select><br><br>
+
+Saturday Events: <select name="satevents">
+    <option value="longcourse">Long Course</option>
+    <option value="olympiccourse">Olympic Course</option>
+    <option value="halfmarathon">Half Marathon</option>
+    <option value="10k">10K Course</option>
+    <option value="noevent">No Event</option>
+    
+  </select><br><br>
+Sunday Events: <select name="sunevents">
+    <option value="sprintcourse">Sprint Triathlon</option>
+    <option value="tryatri">Try-A-Tri</option>
+    <option value="splashanddash">Splash and Dash</option>
+    <option value="noevent">No Event</option>
+  </select><br><br>
 <input type="submit">
 </form>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/nav.js"></script>
+  
+    </main>  
 </body>
 </html>

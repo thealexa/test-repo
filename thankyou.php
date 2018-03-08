@@ -13,13 +13,26 @@ Programmer: Alexandra Nitsche
         
     $email= $_POST["email"];
     
+    $phone= $_POST["phone"];
+    
+    $emername= $_POST["emername"];
+    
+    $emerphone= $_POST["emerphone"];
+        
+    $status= $_POST["status"];
+    
+    $satevents= $_POST["satevents"];
+    
+    $sunevents= $_POST["sunevents"];
+    
+    
      //connecting to DB
     include_once "includes/connection.php";
     
     //inserting form data to database
     
-    $sql="INSERT INTO registration(name, email)"
-     . " VALUES('$name', '$email');"; 
+    $sql="INSERT INTO registration(name, email, phone, emername, emerphone, status, satevents, sunevents)"
+     . " VALUES('$name', '$email', '$phone', '$emername', '$emerphone', '$status', '$satevents', '$sunevents');"; 
     
     //
 try { 
