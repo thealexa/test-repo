@@ -10,10 +10,10 @@ Programmer: Alexandra Nitsche
 /* global $ */
 
 // The line below is to test your link to the .js file. Please comment it out when it works.
-alert("the link to the .js file is correct!");
+//alert("the link to the .js file is correct!");
 
 //The line below is to test your link to the jquery.min.js file. Please comment it out when it works.
-if (window.jQuery) {alert("the link to the jQuery file is correct!");}
+//if (window.jQuery) {alert("the link to the jQuery file is correct!");}
 
 // Enter your jQuery code below this line (put a blank line first).
 

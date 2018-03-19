@@ -19,12 +19,21 @@ Programmer: Alexandra Nitsche
 </head>
 
 <body>
-<div class="logo">
+        <!--/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */-->
+    
+<script> function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+ </script>
+
     <header>
-      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>  
-    <h1><br>ACE IN THE HOLE</h1>
+    <h1><br>ACE IN THE HOLE MULTISPORT EVENTS</h1>
     </header>
-</div>
  <nav>  
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
@@ -35,8 +44,7 @@ Programmer: Alexandra Nitsche
     <a href="faq.html"> FAQ</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-    </nav> 
-<body>
+    </nav>
 
 <?php
 // define variables and set to empty values
@@ -70,9 +78,10 @@ function test_input($data) {
 
 </body>
         <footer>
-        <h2>Follow Us On Social to See All the Fun we Have</h2>
-        <img src="images/instagrampaw.jpg" alt="instagram" height="75" width="75">
-        <img src="images/facebookpaw.jpg" alt="facebook" height="75" width="75">
+            <h2>Follow Us On Social</h2>
+        <a href="https://twitter.com/pcccas222"><img src="images/twitter.png" alt="twit" height="75" width="85"></a>
+        <a href="https://www.facebook.com/cas222_cascade"><img src="images/facebook.jpg" alt="facebook" height="75" width="75"></a>
+        <p>© 2018 The Alexandra Designs. All rights reserved.</p>
 
     </footer>
 
