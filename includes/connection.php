@@ -21,19 +21,19 @@ I HAVE A SPECIFIC SERIES OF STEPS I WOULD LIKE YOU TO FOLLOW.
 
 /*
 File Name: connection.php
-Date: 11/09/2017
+Date: 02/02/18
 Programmer: Alexandra Nitsche
 */
 
 // Define constants for database connections
 
 /* 2. Define the constants DB_DSN, DB_USER and DB_PASS, and assign them the values for this class. 
-HINT: See Part 1, Step 1: Create a Database connection. There will be 4 lines of code, including the comment at the top. */
+Create a Database connection.*/
 
 // Define Constants
 define("DB_DSN", "mysql:host=localhost;dbname=thealexa_aith;charset=utf8");
 define("DB_USER", "thealexa_aith_user");
-define("DB_PASS", "G02226098");
+define("DB_PASS", "G02226098!");
 
 
 // Create a database connection
